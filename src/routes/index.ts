@@ -1,5 +1,3 @@
-// const router =
-
 import * as Router from 'koa-router';
 
 const router = new Router();
@@ -9,7 +7,6 @@ router.get('/', async (ctx, next) => {
     title: 'Hello Koa 2!',
   });
 });
-
 
 router.get('/string', async (ctx, next) => {
   ctx.body = 'koa2 string';
@@ -22,4 +19,3 @@ router.get('/json', async (ctx, next) => {
 });
 
 export { router as index };
-

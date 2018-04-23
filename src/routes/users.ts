@@ -12,4 +12,4 @@ router.get('/bar', (ctx, next) => {
   ctx.body = 'this is a users/bar response';
 });
 
-export {router as users};
+export { router as users };
