@@ -1,0 +1,14 @@
+{
+  "name"   : "ts-project",
+  "script" : "bin/www",
+  "watch": false,
+  "env": {
+      "NODE_ENV": "production",
+      "PORT": "1601"
+  },
+  "out_file": "/export/Logs/ts-project/out.log",
+  "error_file": "/export/Logs/ts-project/err.log",
+  "merge_logs": true,
+  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "max_memory_restart" : "2G"
+}

@@ -4,9 +4,22 @@
  * Module dependencies.
  */
 
-var app = require('../app');
 var debug = require('debug')('demo:server');
 var http = require('http');
+var config = require('../dist/config');
+var { configure } =  require('log4js');
+
+/**
+ * configure log4js
+ */
+
+configure(config.loggerConfig);
+
+/**
+ * My node application
+ */
+
+var app = require('../dist/app');
 
 /**
  * Get port from environment and store in Express.
@@ -87,4 +100,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log('App listening on', `http://localhost:${addr.port}`);
 }

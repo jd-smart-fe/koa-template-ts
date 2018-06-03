@@ -26,7 +26,7 @@ app.use(koaStatic(__dirname + '/public'));
 
 app.use(
   views(__dirname + '/views', {
-    extension: 'pug',
+    extension: 'ejs',
   }),
 );
 

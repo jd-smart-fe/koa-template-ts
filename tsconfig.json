@@ -7,10 +7,5 @@
     "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": ["node_modules", "dist"],
-  "compileOnSave": true
+  }
 }
